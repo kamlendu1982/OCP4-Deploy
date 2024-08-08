@@ -27,7 +27,8 @@ jobs:
       - name: Install OpenShift CLI tools
         uses: redhat-actions/openshift-tools-installer@v1
         with:
-          openshift-install: "${{ secrets.OCP_CLIENT_VERSION }}"
+          #openshift-install: "${{ secrets.OCP_CLIENT_VERSION }}"
+          openshift-install: "4.10.8"
 
       - name: Destroy OpenShift Cluster
         run: openshift-install destroy cluster --dir=.
