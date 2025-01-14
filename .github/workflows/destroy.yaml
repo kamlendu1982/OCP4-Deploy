@@ -12,9 +12,9 @@ jobs:
     name: Setup OpenShift Installer Binary
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Download OCP Cluster Artifacts
-        uses: dawidd6/action-download-artifact@v2.15.0
+        uses: kamlendu1982/download-artifact@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: deploy.yaml
