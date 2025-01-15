@@ -27,8 +27,10 @@ jobs:
         with:
           #openshift-install: "${{secrets.OCP_CLIENT_VERSION}}"
           #oc: "${{secrets.OCP_CLIENT_VERSION}}"
-          openshift-install: "4.10.8"
-          oc: "4.10.8"
+          #openshift-install: "4.10.8"
+          openshift-install: "4.16"
+          #oc: "4.10.8"
+          oc: "4.16"
           
       - name: Get openshift-install flags
         run: openshift-install create --help
